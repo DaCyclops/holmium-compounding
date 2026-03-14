@@ -1,0 +1,13 @@
+{
+  "name": "holmium-compounding",
+  "version": "2.0.0",
+  "title": "Holmium Compounding",
+  "author": "DaCyclops",
+  "homepage": "",
+  "contact": "dacyclops@dacyclops.com",
+  "description": "Increasing Holmium production by extended processing chains. Yes, Multiple.",
+  "factorio_version":"2.0",
+    "dependencies": [
+        "space-age"
+    ]
+}

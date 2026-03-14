@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 11. 03. 2026
+  Feature:
+    - Adds two teirs of additional processing to increase Holmium output from the stanadard input.
+      First Two Tiers are unlocked after Holmium Processing.
+    - Adds an additional research allowing advanced facilities to be used. Unlocked after Electromagnetic and Metallurgic science.
+  Compatibility:
+    - Initial Version for Factorio 2.0
+
