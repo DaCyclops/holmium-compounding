@@ -3,7 +3,7 @@ data:extend({
     type = "recipe",
     name = "holmium-ore-melting",
     icon = "__holmium-compounding__/graphics/molten-holmium.png",
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     energy_required = 20,
     ingredients =
@@ -48,7 +48,7 @@ data:extend({
         tint = {r = 1,g = 0.2,b = 0.7}
       }
     },
-    category = "oil-processing",
+    categories = {"oil-processing"},
     enabled = false,
     energy_required = 40,
     ingredients =
@@ -91,7 +91,7 @@ data:extend({
         tint = {r = 0.3,g = 0.5,b = 0.7, a=0.8}
       }
     },
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     energy_required = 5,
     ingredients =
@@ -134,7 +134,7 @@ data:extend({
         tint = {r = 1,g = 0.2,b = 0.2, a=0.8}
       }
     },
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     energy_required = 5,
     ingredients =
@@ -144,9 +144,9 @@ data:extend({
     results =
      {
       {type = "fluid", name = "holmium-slurry", amount_min = 6, amount_max = 12, show_details_in_recipe_tooltip = false, ignored_by_productivity=20, ignored_by_stats = 20},
-      {type = "item", name = "stone", amount = 1, probability = 0.12, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "carbon", amount = 1, probability = 0.08, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "iron-ore", amount = 1, probability = 0.02, show_details_in_recipe_tooltip = false}
+      {type = "item", name = "stone", amount = 1, independent_probability = 0.12, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "carbon", amount = 1, independent_probability = 0.08, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "iron-ore", amount = 1, independent_probability = 0.02, show_details_in_recipe_tooltip = false}
     },
     subgroup = "fulgora-processes",
     order = "b[z-holmium-concentration]-d[holmium-slurry-processing]",
@@ -181,7 +181,7 @@ data:extend({
         tint = {r = 0,g = 0.7,b = 1, a=0.8}
       }
     },
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     energy_required = 60,
     ingredients =
@@ -224,7 +224,7 @@ data:extend({
         tint = {r = 0.85,g = 0.7,b = 0.45, a=0.8}
       }
     },
-    category = "recycling",
+    categories = {"recycling"},
     enabled = false,
     energy_required = 8,
     ingredients =
@@ -267,7 +267,7 @@ data:extend({
         tint = {r = 0.9,g = 0.65,b = 0.2, a=0.8}
       }
     },
-    category = "centrifuging",
+    categories = {"centrifuging"},
     enabled = false,
     energy_required = 10,
     ingredients =
@@ -311,7 +311,7 @@ data:extend({
         tint = {r = 0.3,g = 0.5,b = 0.7, a=0.8}
       }
     },
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     energy_required = 5,
     ingredients =
@@ -349,24 +349,24 @@ data:extend({
 local hc_melting_adv = util.table.deepcopy(data.raw.recipe["holmium-ore-melting"])
 hc_melting_adv.name="holmium-ore-melting-adv"
 --hc_melting_adv.additional_categories={"metallurgy"}
-hc_melting_adv.category="metallurgy"
+hc_melting_adv.categories={"metallurgy"}
 data.raw.recipe["holmium-ore-melting-adv" ] = hc_melting_adv
 
 local hc_dilution_adv = util.table.deepcopy(data.raw.recipe["holmium-dilution"])
 hc_dilution_adv.name="holmium-dilution-adv"
 --hc_dilution_adv.additional_categories={"cryogenics"}
-hc_dilution_adv.category="cryogenics"
+hc_dilution_adv.categories={"cryogenics"}
 data.raw.recipe["holmium-dilution-adv" ] = hc_dilution_adv
 
 local hc_crystallization_adv = util.table.deepcopy(data.raw.recipe["holmium-crystallization"])
 hc_crystallization_adv.name="holmium-crystallization-adv"
 --hc_crystallization_adv.additional_categories={"electromagnetics"}
-hc_crystallization_adv.category="electromagnetics"
+hc_crystallization_adv.categories={"electromagnetics"}
 data.raw.recipe["holmium-crystallization-adv" ] = hc_crystallization_adv
 
 local hc_dissolution_adv = util.table.deepcopy(data.raw.recipe["holmium-dissolution"])
 hc_dissolution_adv.name="holmium-dissolution-adv"
 --hc_dissolution_adv.additional_categories={"cryogenics"}
-hc_dissolution_adv.category="cryogenics"
+hc_dissolution_adv.categories={"cryogenics"}
 data.raw.recipe["holmium-dissolution-adv" ] = hc_dissolution_adv
 
